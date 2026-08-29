@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Courier Prime', Courier, monospace;
+    background-color: #f4ecd8; /* Warm parchment tone */
+    color: #2b261f;           /* Soft charcoal ink color */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 750px;
+    margin: 20px auto;
+    background-color: #fbf6ec;
+    padding: 30px;
+    border: 3px double #5c4033; /* Classic double line border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #5c4033;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-family: 'Special Elite', cursive, serif;
+    font-size: 2.5rem;
+    color: #70261c; /* Deep rust red */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #5c4033;
+    margin-top: 5px;
+}
+
+.date-bar {
+    border-top: 1px solid #5c4033;
+    border-bottom: 1px solid #5c4033;
+    padding: 4px 0;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation Links */
+nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #1b3b6f; /* Muted vintage navy */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Content */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Special Elite', cursive, serif;
+    color: #70261c;
+    font-size: 1.4rem;
+    border-bottom: 1px dashed #a38f78;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* Retro Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+th, td {
+    border: 1px solid #a38f78;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ebdcb9;
+    color: #3b281f;
+    font-family: 'Special Elite', cursive, serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f5eedc;
+}
+
+/* Old-Fashioned Form */
+fieldset {
+    border: 1px solid #a38f78;
+    padding: 15px;
+    background-color: #f5eedc;
+}
+
+legend {
+    font-weight: bold;
+    color: #70261c;
+    padding: 0 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    background-color: #fbf6ec;
+    border: 1px solid #a38f78;
+    font-family: 'Courier Prime', Courier, monospace;
+    color: #2b261f;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #70261c;
+    color: #fbf6ec;
+    border: none;
+    padding: 8px 16px;
+    font-family: 'Special Elite', cursive, serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #521a13;
+}
+
+/* Sepia Photo Effect */
+.vintage-img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #5c4033;
+    padding: 4px;
+    background: #fff;
+    filter: sepia(60%) contrast(90%);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6e5d4f;
+    border-top: 1px solid #5c4033;
+    padding-top: 15px;
+    margin-top: 30px;
+}
