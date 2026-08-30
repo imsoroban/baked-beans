@@ -25,35 +25,58 @@
         </header>
 
         <main>
-            <h2>brand comparison matrix</h2>
+            <h2>commercial manufacturer archives</h2>
+            <p>baked bean profiles vary significantly by country and recipe heritage. american varieties skew sweet and savory with molasses, bacon, and brown sugar, while british and commonwealth recipes feature a sharp tomato sauce paired with lower sugar content.</p>
 
-            <div style="margin-bottom: 15px;">
-                <input type=text id="search-input" placeholder="filter table records..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
+            <div style="margin-bottom: 15px; margin-top: 20px;">
+                <input type=text id="search-input" placeholder="filter by brand name, origin, or flavor profile..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
             </div>
 
             <table>
                 <thead>
                     <tr>
                         <th>brand</th>
-                        <th>sauce thickness</th>
-                        <th>flavor profile</th>
+                        <th>founded</th>
+                        <th>regional style</th>
+                        <th>sauce base</th>
+                        <th>sweetener used</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><b>heinz</b></td>
-                        <td>runny / thin</td>
-                        <td>tangy tomato</td>
+                        <td>1886 (UK market)</td>
+                        <td>British Standard</td>
+                        <td>Thin tomato purée</td>
+                        <td>Standard sugar</td>
                     </tr>
                     <tr>
                         <td><b>bush's best</b></td>
-                        <td>thick / syrupy</td>
-                        <td>sweet brown sugar & bacon</td>
+                        <td>1908 (Tennessee, US)</td>
+                        <td>Southern American</td>
+                        <td>Thick bacon-infused broth</td>
+                        <td>Brown sugar & molasses</td>
                     </tr>
                     <tr>
                         <td><b>branston</b></td>
-                        <td>very thick</td>
-                        <td>savory & rich</td>
+                        <td>2005 (United Kingdom)</td>
+                        <td>British Modern</td>
+                        <td>Rich, thick tomato purée</td>
+                        <td>Sugar & spices</td>
+                    </tr>
+                    <tr>
+                        <td><b>van camp's</b></td>
+                        <td>1861 (Indiana, US)</td>
+                        <td>Traditional American</td>
+                        <td>Tomato-pork broth</td>
+                        <td>Corn syrup & sugar</td>
+                    </tr>
+                    <tr>
+                        <td><b>wattie's</b></td>
+                        <td>1934 (New Zealand)</td>
+                        <td>Australasian</td>
+                        <td>Tangy tomato sauce</td>
+                        <td>Refined sugar</td>
                     </tr>
                 </tbody>
             </table>
@@ -66,6 +89,8 @@
                     <option value="heinz">heinz</option>
                     <option value="bushs">bush's best</option>
                     <option value="branston">branston</option>
+                    <option value="vancamps">van camp's</option>
+                    <option value="watties">wattie's</option>
                 </select><br><br>
 
                 <label>ur rating:</label><br>
