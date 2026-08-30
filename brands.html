@@ -25,58 +25,46 @@
         </header>
 
         <main>
-            <h2>commercial manufacturer archives</h2>
-            <p>baked bean profiles vary significantly by country and recipe heritage. american varieties skew sweet and savory with molasses, bacon, and brown sugar, while british and commonwealth recipes feature a sharp tomato sauce paired with lower sugar content.</p>
+            <h2>canned beans in sauce comparison</h2>
+            <p>canned beans in sauce vary by tomato concentration, sugar balance, spice blends, and sauce viscosity across leading producers.</p>
 
             <div style="margin-bottom: 15px; margin-top: 20px;">
-                <input type=text id="search-input" placeholder="filter by brand name, origin, or flavor profile..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
+                <input type=text id="search-input" placeholder="filter by brand name, sauce consistency, or region..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
             </div>
 
             <table>
                 <thead>
                     <tr>
                         <th>brand</th>
-                        <th>founded</th>
-                        <th>regional style</th>
-                        <th>sauce base</th>
-                        <th>sweetener used</th>
+                        <th>sauce profile</th>
+                        <th>sweetness</th>
+                        <th>sauce thickness</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><b>heinz</b></td>
-                        <td>1886 (UK market)</td>
-                        <td>British Standard</td>
-                        <td>Thin tomato purée</td>
-                        <td>Standard sugar</td>
-                    </tr>
-                    <tr>
-                        <td><b>bush's best</b></td>
-                        <td>1908 (Tennessee, US)</td>
-                        <td>Southern American</td>
-                        <td>Thick bacon-infused broth</td>
-                        <td>Brown sugar & molasses</td>
+                        <td>classic tangy tomato sauce</td>
+                        <td>medium-sweet</td>
+                        <td>smooth / moderate</td>
                     </tr>
                     <tr>
                         <td><b>branston</b></td>
-                        <td>2005 (United Kingdom)</td>
-                        <td>British Modern</td>
-                        <td>Rich, thick tomato purée</td>
-                        <td>Sugar & spices</td>
-                    </tr>
-                    <tr>
-                        <td><b>van camp's</b></td>
-                        <td>1861 (Indiana, US)</td>
-                        <td>Traditional American</td>
-                        <td>Tomato-pork broth</td>
-                        <td>Corn syrup & sugar</td>
+                        <td>thick savory tomato purée</td>
+                        <td>low-medium</td>
+                        <td>very thick</td>
                     </tr>
                     <tr>
                         <td><b>wattie's</b></td>
-                        <td>1934 (New Zealand)</td>
-                        <td>Australasian</td>
-                        <td>Tangy tomato sauce</td>
-                        <td>Refined sugar</td>
+                        <td>rich kiwi tomato sauce</td>
+                        <td>medium</td>
+                        <td>thick</td>
+                    </tr>
+                    <tr>
+                        <td><b>bachelors</b></td>
+                        <td>light seasoned tomato sauce</td>
+                        <td>low</td>
+                        <td>medium-thin</td>
                     </tr>
                 </tbody>
             </table>
@@ -87,10 +75,9 @@
                 <label>select brand:</label><br>
                 <select id="brand-select" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;">
                     <option value="heinz">heinz</option>
-                    <option value="bushs">bush's best</option>
                     <option value="branston">branston</option>
-                    <option value="vancamps">van camp's</option>
                     <option value="watties">wattie's</option>
+                    <option value="bachelors">bachelors</option>
                 </select><br><br>
 
                 <label>ur rating:</label><br>
@@ -103,7 +90,7 @@
                 </select><br><br>
 
                 <input type=text id="reviewer-name" placeholder="ur name / alias"><br><br>
-                <textarea id="review-text" rows=3 placeholder="write ur thoughts on the sauce..."></textarea><br>
+                <textarea id="review-text" rows=3 placeholder="write ur thoughts on the tomato sauce..."></textarea><br>
                 <button type=button onclick="addReview()">post dispatch</button>
 
                 <div id="review-wall" style="margin-top: 20px;">
