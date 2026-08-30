@@ -1,114 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>brands - the baked bean vault</title>
-    <link rel=stylesheet href=style.css>
-</head>
- <body>
-
-    <div class="wrapper">
-        
-        <header>
-            <h1>the baked bean vault</h1>
-            <p class="tagline">all about beans</p>
-            <div class="date-bar">
-                <span>est 2026</span>
-                <span>issue no 1</span>
-                <span>free</span>
-            </div>
-            <nav>
-                <a href="index.html">[ home ]</a>
-                <a href="brands.html">[ top brands ]</a>
-                <a href="recipes.html">[ recipes ]</a>
-                <a href=history.html>[ history ]</a>
-            </nav>
-        </header>
-
-        <main>
-            <h2>canned beans in sauce comparison</h2>
-            <p>canned beans in sauce vary by tomato concentration, sugar balance, spice blends, and sauce viscosity across leading producers.</p>
-
-            <div style="margin-bottom: 15px; margin-top: 20px;">
-                <input type=text id="search-input" placeholder="filter by brand name, sauce consistency, or region..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>brand</th>
-                        <th>sauce profile</th>
-                        <th>sweetness</th>
-                        <th>sauce thickness</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>heinz</b></td>
-                        <td>classic tangy tomato sauce</td>
-                        <td>medium-sweet</td>
-                        <td>smooth / moderate</td>
-                    </tr>
-                    <tr>
-                        <td><b>branston</b></td>
-                        <td>thick savory tomato purée</td>
-                        <td>low-medium</td>
-                        <td>very thick</td>
-                    </tr>
-                    <tr>
-                        <td><b>wattie's</b></td>
-                        <td>rich kiwi tomato sauce</td>
-                        <td>medium</td>
-                        <td>thick</td>
-                    </tr>
-                    <tr>
-                        <td><b>bachelors</b></td>
-                        <td>light seasoned tomato sauce</td>
-                        <td>low</td>
-                        <td>medium-thin</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <section id=review-section style="margin-top: 30px;">
-                <h2>leave a brand verdict</h2>
-                
-                <label>select brand:</label><br>
-                <select id="brand-select" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;">
-                    <option value="heinz">heinz</option>
-                    <option value="branston">branston</option>
-                    <option value="watties">wattie's</option>
-                    <option value="bachelors">bachelors</option>
-                </select><br><br>
-
-                <label>ur rating:</label><br>
-                <select id="star-select" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;">
-                    <option value="⭐⭐⭐⭐⭐">5/5 stars</option>
-                    <option value="⭐⭐⭐⭐">4/5 stars</option>
-                    <option value="⭐⭐⭐">3/5 stars</option>
-                    <option value="⭐⭐">2/5 stars</option>
-                    <option value="⭐">1/5 star</option>
-                </select><br><br>
-
-                <input type=text id="reviewer-name" placeholder="ur name / alias"><br><br>
-                <textarea id="review-text" rows=3 placeholder="write ur thoughts on the tomato sauce..."></textarea><br>
-                <button type=button onclick="addReview()">post dispatch</button>
-
-                <div id="review-wall" style="margin-top: 20px;">
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>the baked bean vault</p>
-        </footer>
-
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
     <title>recipes - the baked bean vault</title>
     <link rel=stylesheet href=style.css>
 </head>
@@ -133,24 +25,24 @@
         </header>
 
         <main>
-            <h2>culinary ledger & traditional recipes</h2>
+            <h2>canned beans in sauce: preparations</h2>
 
             <section id=recipe-scaler>
-                <h3>dynamic toast portion calculator</h3>
-                <p>select portion size preset:</p>
+                <h3>portion calculator</h3>
+                <p>select serving size:</p>
                 <button type=button onclick="scaleBeans(1)">1 person</button>
                 <button type=button onclick="scaleBeans(2)">2 people</button>
                 <button type=button onclick="scaleBeans(4)">4 people</button>
 
                 <ul>
-                    <li><span id=can-count>1</span> standard 415g can(s) of navy beans in tomato sauce</li>
-                    <li><span id=slice-count>2</span> slice(s) of thick white or sourdough bread</li>
-                    <li><span id=butter-count>1</span> tbsp unsalted farm butter</li>
+                    <li><span id=can-count>1</span> standard 415g tin(s) of beans in tomato sauce</li>
+                    <li><span id=slice-count>2</span> slice(s) of bread</li>
+                    <li><span id=butter-count>1</span> tbsp salted butter</li>
                 </ul>
             </section>
 
             <section id=custom-ratio style="border: 1px dashed #a38f78; padding: 15px; margin-top: 20px;">
-                <h3>custom bread to bean math</h3>
+                <h3>toast to sauce calculator</h3>
                 <label>how many slices of toast do u have?</label><br><br>
                 <input type=number id="bread-input" placeholder="e.g. 3" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;"><br><br>
                 <button type=button onclick="calculateToastRatio()">calculate ratio</button>
@@ -158,23 +50,21 @@
             </section>
 
             <section id=recipe1 style="margin-top: 25px;">
-                <h3>classic british beans on toast</h3>
-                <p><i>a traditional staple introduced as a breakfast and lunch fast-food alternative during the 1920s.</i></p>
+                <h3>beans in tomato sauce on toast</h3>
                 <ol>
-                    <li>toast two thick slices of white bread until golden brown.</li>
-                    <li>empty a 415g tin of navy beans into a saucepan and heat over medium flame for 4 minutes. avoid boiling to keep bean skins intact.</li>
-                    <li>apply a heavy layer of salted butter directly onto the hot toast.</li>
-                    <li>pour the warm beans over the buttered toast. optional: top with sharp cheddar cheese or a dash of worcestershire sauce.</li>
+                    <li>toast bread slices until firm and golden brown.</li>
+                    <li>empty a tin of beans in tomato sauce into a small pan over gentle heat for 3-4 minutes. stir gently to reduce sauce slightly without breaking the beans.</li>
+                    <li>butter the hot toast right to the edges.</li>
+                    <li>pour the heated beans and sauce evenly over the buttered toast slices.</li>
                 </ol>
             </section>
 
             <section id=recipe2 style="margin-top: 25px;">
-                <h3>authentic new england slow-cooked Boston baked beans</h3>
-                <p><i>the 18th-century american method using a dedicated ceramic bean pot.</i></p>
+                <h3>cheesy canned bean bake</h3>
                 <ol>
-                    <li>soak 1 lb of dried navy beans overnight in water, then drain and boil until skins burst.</li>
-                    <li>transfer beans to a ceramic bean pot with 1/2 cup dark molasses, 1/3 cup brown sugar, 1 tsp dry mustard, and 1/4 lb salt pork sliced into lardons.</li>
-                    <li>cover with hot water and bake at 150°C (300°F) for 6 to 8 hours, adding liquid as needed until tender and dark mahogany brown.</li>
+                    <li>pour a whole tin of beans in sauce into an ovenproof dish.</li>
+                    <li>grate sharp cheddar cheese heavily over the top of the sauce.</li>
+                    <li>place under a hot grill for 3 minutes until the cheese melts into the tomato sauce and bubbles.</li>
                 </ol>
             </section>
         </main>
