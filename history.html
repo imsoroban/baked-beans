@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>history - the baked bean vault</title>
+    <link rel=stylesheet href=style.css>
+</head>
+ <body>
+
+    <div class="wrapper">
+        
+        <header>
+            <h1>the baked bean vault</h1>
+            <p class="tagline">all about beans</p>
+            <div class="date-bar">
+                <span>est 2026</span>
+                <span>issue no 1</span>
+                <span>free</span>
+            </div>
+            <nav>
+                <a href="index.html">[ home ]</a>
+                <a href="brands.html">[ top brands ]</a>
+                <a href="recipes.html">[ recipes ]</a>
+                <a href=history.html>[ history ]</a>
+            </nav>
+        </header>
+
+        <main>
+            <div style="text-align: right; margin-bottom: 10px;">
+                <small>theme:</small>
+                <button type=button onclick="setVaultTheme('default')">paper</button>
+                <button type=button onclick="setVaultTheme('sauce')">sauce</button>
+                <button type=button onclick="setVaultTheme('can')">can</button>
+            </div>
+
+            <h2>the true origins of baked beans</h2>
+            <p>the dish known today as baked beans originated among indigenous north american tribes, including the iroquois, penobscot, and narragansett. long before European contact, native peoples slow-cooked indigenous navy beans in clay pots with maple syrup, bear fat, and salt, burying the earthenware vessels in pits lined with hot stones to simmer overnight.</p>
+
+            <p>17th-century english settlers in the massachusetts bay colony adapted these methods to fit puritan religious practices. to avoid cooking on the sabbath, puritans prepared bean pots on saturday evening, leaving them in brick ovens to cook slowly until sunday morning. this tradition gave rise to Boston's famous nickname, "bean town."</p>
+
+            <h2>industrialization and transatlantic shift</h2>
+            <p>the transition from homemade crock dish to canned global commodity began during the American Civil War. industrialized canning allowed manufacturers to ship cooked beans in hermetically sealed tin cans to troops, gold rush miners, and frontier pioneers.</p>
+
+            <p>in 1886, henry heinz traveled to london and personally introduced canned baked beans to the luxury department store fortnum & mason. initially sold as an exotic american delicacy, canned beans became a staple of British food culture during the second world war due to strictly rationed meat and long shelf stability.</p>
+
+            <section id="fact-generator" style="text-align: center; border: 1px dashed #a38f78; padding: 15px; margin-top: 25px;">
+                <h3>historical trivia generator</h3>
+                <p id="fact-display"><i>click below to draw authentic archival facts...</i></p>
+                <button type=button onclick="getNewFact()">dispense fact</button>
+            </section>
+
+            <section id="can-cracker" style="border: 1px dashed #a38f78; padding: 15px; margin-top: 25px;">
+                <h3>can cracking simulator</h3>
+                <p>tins opened this session: <b id="can-counter">0</b></p>
+                <button type=button onclick="openCan()">crack open a tin</button>
+            </section>
+
+            <section id="ascii-section" style="text-align: center; margin-top: 25px;">
+                <h3>tin schematic display</h3>
+                <pre id="ascii-tin" style="font-family: monospace; background: #f5eedc; padding: 10px; border: 1px solid #a38f78; display: inline-block;">
+   .---.
+  |  |  |
+  |  |  |
+  |==|==|
+  |BEANS|
+  |_____|
+                </pre><br>
+                <button type=button onclick="generateTinArt()">draw new tin</button>
+            </section>
+
+            <br>
+            <p>read more at the <a href="https://en.wikipedia.org/wiki/Baked_beans" target=_blank>wikipedia bean archive</a>.</p>
+        </main>
+
+        <footer>
+            <p>the baked bean vault</p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
