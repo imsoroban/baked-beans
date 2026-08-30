@@ -1,6 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>brands - the baked bean vault</title>
+    <link rel=stylesheet href=style.css>
+</head>
+ <body>
+
+    <div class="wrapper">
+        
+        <header>
+            <h1>the baked bean vault</h1>
+            <p class="tagline">all about beans</p>
+            <div class="date-bar">
+                <span>est 2026</span>
+                <span>issue no 1</span>
+                <span>free</span>
+            </div>
+            <nav>
+                <a href="index.html">[ home ]</a>
+                <a href="brands.html">[ top brands ]</a>
+                <a href="recipes.html">[ recipes ]</a>
+                <a href=history.html>[ history ]</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>canned beans in sauce comparison</h2>
+            <p>canned beans in sauce vary by tomato concentration, sugar balance, spice blends, and sauce viscosity across leading producers.</p>
+
+            <div style="margin-bottom: 15px; margin-top: 20px;">
+                <input type=text id="search-input" placeholder="filter by brand name, sauce consistency, or region..." style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace; width: 100%; padding: 5px;">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>brand</th>
+                        <th>sauce profile</th>
+                        <th>sweetness</th>
+                        <th>sauce thickness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>heinz</b></td>
+                        <td>classic tangy tomato sauce</td>
+                        <td>medium-sweet</td>
+                        <td>smooth / moderate</td>
+                    </tr>
+                    <tr>
+                        <td><b>branston</b></td>
+                        <td>thick savory tomato purée</td>
+                        <td>low-medium</td>
+                        <td>very thick</td>
+                    </tr>
+                    <tr>
+                        <td><b>wattie's</b></td>
+                        <td>rich kiwi tomato sauce</td>
+                        <td>medium</td>
+                        <td>thick</td>
+                    </tr>
+                    <tr>
+                        <td><b>bachelors</b></td>
+                        <td>light seasoned tomato sauce</td>
+                        <td>low</td>
+                        <td>medium-thin</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id=review-section style="margin-top: 30px;">
+                <h2>leave a brand verdict</h2>
+                
+                <label>select brand:</label><br>
+                <select id="brand-select" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;">
+                    <option value="heinz">heinz</option>
+                    <option value="branston">branston</option>
+                    <option value="watties">wattie's</option>
+                    <option value="bachelors">bachelors</option>
+                </select><br><br>
+
+                <label>ur rating:</label><br>
+                <select id="star-select" style="background:#fbf6ec; border:1px solid #a38f78; font-family:'Courier Prime', monospace;">
+                    <option value="⭐⭐⭐⭐⭐">5/5 stars</option>
+                    <option value="⭐⭐⭐⭐">4/5 stars</option>
+                    <option value="⭐⭐⭐">3/5 stars</option>
+                    <option value="⭐⭐">2/5 stars</option>
+                    <option value="⭐">1/5 star</option>
+                </select><br><br>
+
+                <input type=text id="reviewer-name" placeholder="ur name / alias"><br><br>
+                <textarea id="review-text" rows=3 placeholder="write ur thoughts on the tomato sauce..."></textarea><br>
+                <button type=button onclick="addReview()">post dispatch</button>
+
+                <div id="review-wall" style="margin-top: 20px;">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>the baked bean vault</p>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
     <title>recipes - the baked bean vault</title>
     <link rel=stylesheet href=style.css>
 </head>
