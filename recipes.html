@@ -6,7 +6,7 @@
 </head>
  <body>
 
-<div class="wrapper" >
+    <div class="wrapper" >
         
         <header>
             <h1>the baked bean vault</h1>
@@ -26,3 +26,47 @@
 
         <main>
             <h2>bean preparation ledger</h2>
+
+            <section id=recipe-scaler>
+                <h3>dynamic toast calculator</h3>
+                <p>select portion size:</p>
+                <button type=button onclick="scaleBeans(1)">1 person</button>
+       <button type=button onclick="scaleBeans(2)">2 people</button>
+             <button type=button onclick="scaleBeans(4)">4 people</button>
+
+                <ul>
+                    <li><span id=can-count>1</span> can(s) of baked beans</li>
+           <li><span id=slice-count>2</span> slice(s) of sourdough toast</li>
+                    <li><span id=butter-count>1</span> tbsp farm butter</li>
+                </ul>
+            </section>
+
+            <section id=recipe1>
+                <h3>quick bean toast recipe</h3>
+                <ol>
+                    <li>toast two slices of bread.</li>
+                    <li>heat one can of baked beans on the stove for 3–5 minutes.</li>
+                    <li>pour the warm beans directly over the toast and serve.
+                </ol>
+            </section>
+
+            <section id=recipe2>
+                <h3>cheesy bean bake</h3>
+                <ol>
+                    <li>dump a full can of beans into a small baking dish.</li>
+              <li>cover with sharp cheddar cheese and a drop of hot sauce.</li>
+                    <li>bake at 180°C until bubbling and golden brown.
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <p>the baked bean vault</p>
+<br>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
